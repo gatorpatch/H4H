@@ -9,15 +9,14 @@ if (window.mobileCheck() == true) {
     document.getElementById("mobileMenu").setAttribute("style", "display:initial");
     document.getElementById("header").style.height = '5%';
     document.getElementById("footer").style.height = '4%';
-    document.getElementById("mLogo").style.display = "block";
-    document.getElementById("footerText").style.fontSize = '30px';
+    document.getElementById("footerText").style.fontSize = '25px';
+    document.getElementById("contentText").style.fontSize = '30px';
 }
 else {
     document.getElementById("nonMobileMen").setAttribute("style", "display:initial");
     document.getElementById("mobileMenu").setAttribute("style", "display:none");
     document.getElementById("header").style.height = '10%';
     document.getElementById("footer").style.height = '7%';
-    document.getElementById("mLogo").style.display = "none";
 }
 
 function hamburgerToggle() {

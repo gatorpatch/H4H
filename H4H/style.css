@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+.logo {
+    height: 15%;
+    width:100%;
+}
+
 body {
     display: flex;
     min-height: 100vh;
@@ -11,7 +16,7 @@ body {
 }
 
 .col-1 {
-    flex: 1;
+    flex: 2;
 }
 
 .col-2 {
@@ -23,9 +28,8 @@ body {
 
 .content {
     display: flex;
-    background-color: chocolate;
+    background-color: floralwhite;
     flex-direction: row;
-    border: inset;
     height: 100%;
 }
 
@@ -59,6 +63,7 @@ ul.navbar {
 li.navbar {
     margin-top: 5px;
     margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a:link, a:visited {
@@ -75,15 +80,15 @@ a:hover, a:active {
 }
 
 .primary {
-    background-color: mediumpurple !important;
+    background-color: darkkhaki !important;
 }
 
 .secondary {
-    background-color: mediumaquamarine !important;
+    background-color: darkgrey !important;
 }
 
 .third {
-    background-color: orangered !important;
+    background-color: navajowhite !important;
 }
 
 .accent {
@@ -95,7 +100,7 @@ a:hover, a:active {
 }
 
 .secondary-text {
-    color: blue !important;
+    color: midnightblue !important;
 }
 
 .logo {
@@ -104,8 +109,11 @@ a:hover, a:active {
 
 #mainHeader {
     text-align: center;
-    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: indianred;
+    margin: 5px;
     flex-grow: 2;
+    white-space: nowrap;
 }
 
 #mMenu {
@@ -154,8 +162,26 @@ li.navbarH {
 ul.notNav {
     display: inline-block;
     text-align: left;
+    margin: 10px;
+    padding: 0;
+    list-style: circle;
 }
 
 li.notNav {
     text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+#BLM {
+    background-image: url("BLM.jpg");
+    height:50%;
+    width: 100%;
+}
+
+#wMarch {
+    background-image: url("WomenMarch.jpg");
+    height: 50%;
+    width: 100%;
+    
 }
