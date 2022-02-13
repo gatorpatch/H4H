@@ -84,13 +84,17 @@ a:hover, a:active {
 }
 
 .primary-text {
-    color: yellowgreen !important;
+    color: red !important;
 }
 
 .secondary-text {
-    color: lightcoral !important;
+    color: blue !important;
 }
 
 .logo {
     padding: 7px;
+}
+
+#mainHeader {
+    text-align: center;
 }
