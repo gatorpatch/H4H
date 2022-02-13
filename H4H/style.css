@@ -17,7 +17,7 @@ body {
     display: flex;
     flex-direction: column;
     flex: 5;
-    justify-content:space-between
+    justify-content:space-between;
 }
 
 .content {
@@ -38,7 +38,7 @@ header, footer, article, nav {
     padding: 1em;
 }
 
-nav {
+nav[#nonMobileMen] {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -67,7 +67,7 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-    background-color: rgb(0, 255, 255, 0) !important;
+    background-color: rgb(255, 255, 255, 0) !important;
 }
 
 .primary {
@@ -76,6 +76,10 @@ a:hover, a:active {
 
 .secondary {
     background-color: mediumaquamarine !important;
+}
+
+.third {
+    background-color: orangered !important;
 }
 
 .accent {
@@ -100,7 +104,11 @@ a:hover, a:active {
     flex-grow: 2;
 }
 
-.mobileMenu {
+#mMenu {
+    margin: 0;
+    padding: 0;
+    display:none;
+    flex-basis:20%;
 }
 
 #footerText {
@@ -111,4 +119,30 @@ a:hover, a:active {
 header {
     display: flex;
     justify-content: space-between;
+}
+
+ul.navbarH {
+    list-style-type: none;
+    overflow: hidden;
+    margin:0px;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction:column;
+    justify-content: stretch;
+}
+
+li.navbarH {
+    width: 100%;
+    flex-basis: 100%;
+}
+
+.buttonH {
+    height: 100%;
+    font-size:20px;
+}
+
+#mLogo {
+    display: none;
 }

@@ -1,11 +1,10 @@
 ﻿<!doctype html>
 <head>
     <meta charset="utf-8" />
-    <title>Insert Topic Here</title>
+    <title>Content Template</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <nav class="col-1 primary" id="nonMobileMen">
         <img class="logo" src="logoipsum-logo-34.svg" alt="logo" />
         <a href="home.html" class="secondary">Home</a>
@@ -20,7 +19,16 @@
             <h1 id="mainHeader" class="primary-text">
                 H4H Project 2022
             </h1>
+            <img class="logo" id="mLogo" src="logoipsum-logo-34.svg" alt="logo" />
         </header>
+        <nav class="primary" id="mMenu">
+            <ul class="navbarH">
+                <li class="navbarH primary-text"><a class="buttonH third" href="contentTemplate.html">Content Template</a></li>
+                <li class="navbarH primary-text"><a class="buttonH third" href="placehold2.html">Placehold2</a></li>
+                <li class="navbarH primary-text"><a class="buttonH third" href="placehold2.html">Placehold2</a></li>
+                <li class="navbarH primary-text"><a class="buttonH third" href="placehold2.html">Placehold2</a></li>
+            </ul>
+        </nav>
         <main class="content">
             <article>
                 <div class="primary-text">
@@ -56,6 +64,7 @@
             document.getElementById("mobileMenu").setAttribute("style", "display:initial");
             document.getElementById("header").style.height = '5%';
             document.getElementById("footer").style.height = '4%';
+            document.getElementById("mLogo").style.display = "block";
             document.getElementById("footerText").style.fontSize = '30px';
         }
         else {
@@ -63,7 +72,11 @@
             document.getElementById("mobileMenu").setAttribute("style", "display:none");
             document.getElementById("header").style.height = '10%';
             document.getElementById("footer").style.height = '7%';
-
+            document.getElementById("mLogo").style.display = "none";
         }
+
+        document.getElementById("mobileMenu").addEventListener('click', function (event) {
+            hamburgerToggle();
+        });
     </script>
 </body>
