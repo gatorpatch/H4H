@@ -5,7 +5,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="col-1 primary">
+
+    <nav class="col-1 primary" id="nonMobileMen">
         <img class="logo" src="logoipsum-logo-34.svg" alt="logo" />
         <a href="home.html" class="secondary">Home</a>
         <ul class="navbar">
@@ -14,16 +15,38 @@
         </ul>
     </nav>
     <div class="col-2">
-        <header class="secondary">
+        <header id="header" class="secondary">
+            <input type="image" id="mobileMenu" src="menu-icon.svg" alt="hamburger menu">
             <h1 id="mainHeader" class="primary-text">
                 H4H Project 2022
             </h1>
         </header>
         <main class="content">
-            <article>Article</article>
+            <article>
+                <p class="primary-text">
+
+                </p>
+            </article>
         </main>
-        <footer class="secondary">
-            <p>H4H Hackathon project by Will Maddrey, Alexa Chang, and Jonathan Nguy</p>
+        <footer id="footer" class="secondary">
+            <p id="footerText" class="secondary-text">H4H Hackathon project by Will Maddrey, Alexa Chang, and Jonathan Nguy</p>
         </footer>
     </div>
+    <script src="mobile.js"></script>
+    <script>
+        if (window.mobileCheck() == true) {
+            document.getElementById("nonMobileMen").setAttribute("style", "display:none");
+            document.getElementById("mobileMenu").setAttribute("style", "display:initial");
+            document.getElementById("header").style.height = '5%';
+            document.getElementById("footer").style.height = '4%';
+            document.getElementById("footerText").style.fontSize = '30px';
+        }
+        else {
+            document.getElementById("nonMobileMen").setAttribute("style", "display:initial");
+            document.getElementById("mobileMenu").setAttribute("style", "display:none");
+            document.getElementById("header").style.height = '10%';
+            document.getElementById("footer").style.height = '7%';
+
+        }
+    </script>
 </body>
